@@ -1,0 +1,31 @@
+{
+  "name": "mithril-graphql",
+  "version": "1.0.0",
+  "description": "A lightweight GraphQL client for the Mithril framework.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "coffee -o dist/ -c index.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benthepoet/mithril-graphql.git"
+  },
+  "keywords": [
+    "mithril",
+    "graphql",
+    "client",
+    "request"
+  ],
+  "author": "Ben Hanna <benpaulhanna@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benthepoet/mithril-graphql/issues"
+  },
+  "homepage": "https://github.com/benthepoet/mithril-graphql#readme",
+  "dependencies": {
+    "mithril": "^1.1.1"
+  },
+  "devDependencies": {
+    "coffeescript": "^1.12.6"
+  }
+}
