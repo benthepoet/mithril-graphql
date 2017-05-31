@@ -1,5 +1,5 @@
 # mithril-graphql
-This module provides a lightweight GraphQL client for the Mithril framework. The client servers as a wrapper around Mithril's `m.request` function. 
+A lightweight GraphQL client for the Mithril framework.
 
 ## Usage
 This module is best utilized with Babel (ES2015+) or CoffeeScript as they both support multiline strings.
@@ -7,7 +7,7 @@ This module is best utilized with Babel (ES2015+) or CoffeeScript as they both s
 ###
 ES5
 ```
-var GraphClient = require('mithril-graphql').GraphClient;
+var GraphClient = require('mithril-graphql');
 
 var options = {
     url: '/graphql'
@@ -27,7 +27,7 @@ client
 ###
 Babel (ES2015+)
 ```
-const { GraphClient } = require('mithril-graphql');
+const GraphClient = require('mithril-graphql');
 
 cont options = {
     url: '/graphql'
@@ -56,7 +56,7 @@ client
 ###
 CoffeeScript
 ```
-{ GraphClient } = require('mithril-graphql')
+GraphClient = require('mithril-graphql')
 
 options = {
     url: '/graphql'
@@ -82,13 +82,13 @@ client
     )
 ```
 
-## Recommended Usage
-For optimal use, it is recommended that GraphQL are written statically and utilize variables. Before the client sends 
+## Additional notes
+For optimal use, it is recommended that GraphQL queries utilize variables opposed to string interpolation. Before the client sends 
 the request it will try to minify the query. Minification will strip out any carriage returns that are followed immediately by tabs or spaces.
 
-## Good
+### Good
 
-### queries.js
+#### queries.js
 ```
 const queries = {
     User: `
@@ -104,9 +104,9 @@ const queries = {
 };
 ```
 
-### graph.js
+#### graph.js
 ```
-const { GraphClient } = require('mithril-graphql');
+const GraphClient = require('mithril-graphql');
 const queries = require('./queries');
 
 const options = {
@@ -122,11 +122,11 @@ client
     });
 ```
 
-## Bad
+### Bad
 
-### graph.js
+#### graph.js
 ```
-const { GraphClient } = require('mithril-graphql');
+const GraphClient = require('mithril-graphql');
 
 cont options = {
     url: '/graphql'
@@ -154,12 +154,13 @@ client
     });
 ```
 
-## API
+## GraphClient
 
-## constructor(options)
+### constructor(options)
+Creates a new GraphClient.
 
-## get(query, [variables])
+### get(query, [variables])
 Sends a GraphQL query using the HTTP GET method.
 
-## post(query, [variables])
+### post(query, [variables])
 Sends a GraphQL query using the HTTP POST method.

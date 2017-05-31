@@ -4,7 +4,7 @@
   "description": "A lightweight GraphQL client for the Mithril framework.",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "coffee -o dist/ -c index.coffee"
+    "prepublish": "coffee -o dist/ -c src/"
   },
   "repository": {
     "type": "git",

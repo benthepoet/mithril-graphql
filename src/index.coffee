@@ -61,13 +61,11 @@ class GraphClient
         options = merge(@options, {
             data: { 
                 query: minify(query)
-                variables: variables
+                variables
             }
-            method: method
+            method
         })
         
         m.request(options)
 
-module.exports = {
-    GraphClient
-}
+module.exports = GraphClient
