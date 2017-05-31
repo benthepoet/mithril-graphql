@@ -4,8 +4,7 @@ A lightweight GraphQL client for the Mithril framework.
 ## Usage
 This module is best utilized with Babel (ES2015+) or CoffeeScript as they both support multiline strings.
 
-###
-ES5
+### ES5
 ```
 var GraphClient = require('mithril-graphql');
 
@@ -24,8 +23,7 @@ client
     });
 ```
 
-###
-Babel (ES2015+)
+### Babel (ES2015+)
 ```
 const GraphClient = require('mithril-graphql');
 
@@ -53,8 +51,7 @@ client
     });
 ```
 
-###
-CoffeeScript
+### CoffeeScript
 ```
 GraphClient = require('mithril-graphql')
 
