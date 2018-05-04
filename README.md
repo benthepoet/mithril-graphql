@@ -36,9 +36,7 @@ const query = `
         user(id: $id) { 
             id 
             name 
-            
-        } 
-        
+        }
     }
 ';
 
@@ -64,9 +62,7 @@ query = """
         user(id: $id) { 
             id 
             name 
-            
-        } 
-        
+        }
     }
 """
 
@@ -93,9 +89,7 @@ const queries = {
             user(id: $id) { 
                 id 
                 name 
-                
-            } 
-            
+            }
         }
     `
 };
@@ -136,9 +130,7 @@ const query = `
         user(id: ${id}) { 
             id 
             name 
-            
-        } 
-        
+        }
     }
 ';
 
