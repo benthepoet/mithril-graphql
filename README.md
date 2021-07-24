@@ -27,7 +27,7 @@ client
 ```
 const GraphClient = require('mithril-graphql');
 
-cont options = {
+const options = {
     url: '/graphql'
 };
 
@@ -119,7 +119,7 @@ client
 ```
 const GraphClient = require('mithril-graphql');
 
-cont options = {
+const options = {
     url: '/graphql'
 };
 
